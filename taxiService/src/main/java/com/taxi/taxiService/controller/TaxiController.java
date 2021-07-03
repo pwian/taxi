@@ -5,6 +5,9 @@ import com.taxi.taxiService.service.TaxiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * @author Aleksandr Ivakin
+ **/
 @RestController
 public class TaxiController {
 
