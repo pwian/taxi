@@ -20,12 +20,12 @@ public class DriverController {
     @Autowired
     private DriverService driverService;
 
-    @GetMapping
+    @GetMapping(path = "/availableDrivers")
     public List<Driver> getAvailableDrivers(){
         return driverService.getAvailableDrivers();
     }
 
-    @PutMapping
+    @PutMapping(path = "/updateDriver")
     public void saveDriver(@Valid @RequestBody Driver driver){
         driverService.saveChanges(driver);
     }

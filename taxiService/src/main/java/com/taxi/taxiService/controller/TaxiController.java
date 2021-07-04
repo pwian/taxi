@@ -14,7 +14,7 @@ public class TaxiController {
     @Autowired
     private TaxiService taxiService;
 
-    @GetMapping
+    @GetMapping(path = "/getTaxi")
     public Taxi getBestTaxi(){
         return taxiService.getBestTaxi();
     }

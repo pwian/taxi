@@ -6,3 +6,14 @@ spring:
     fail-fast: true
     password: ${CONFIG_SERVICE_PASSWORD}
     username: user
+
+server:
+  port: ${PORT:8761}
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    eviction-interval-timer-in-ms: 50000
+    wait-time-in-ms-when-sync-empty: 5

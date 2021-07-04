@@ -14,7 +14,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @GetMapping
+    @GetMapping(path = "/order")
     public void orderTaxi(){
         orderService.orderTaxi();
     }
