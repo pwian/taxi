@@ -14,8 +14,8 @@ public class TaxiController {
     @Autowired
     private TaxiService taxiService;
 
-    @RequestMapping(path = "/{number}", method = RequestMethod.GET)
-    public Taxi getTaxiByNumber(@PathVariable String number){
-        return taxiService.findByNumber(number);
+    @GetMapping
+    public Taxi getBestTaxi(){
+        return taxiService.getBestTaxi();
     }
 }
