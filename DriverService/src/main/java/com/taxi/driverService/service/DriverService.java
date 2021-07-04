@@ -11,5 +11,5 @@ public interface DriverService {
 
     List<Driver> getAvailableDrivers();
 
-    void saveChanges(Driver update);
+    void saveChanges(String idLicense, Boolean availability);
 }

@@ -1,4 +1,4 @@
-package com.taxi.taxiService.domain;
+package orderService.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
@@ -8,12 +8,10 @@ import org.springframework.data.annotation.Transient;
  **/
 public class Taxi {
 
-    @Id
     private String number;
 
     private String driverIdLicense;
 
-    @Transient
     private String idLicense;
 
     public String getDriverIdLicense() {

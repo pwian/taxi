@@ -30,7 +30,8 @@ public class TaxiServiceImpl implements TaxiService{
         Driver driver = drivers.stream().min(Comparator.comparing(Driver::getPricePerKm)).get();
         Taxi taxi = taxiRepository.getTaxiByDriverIdLicense(driver.getIdLicense()).stream().findFirst().get();
         Assert.notNull(taxi, "Taxi is not found");
-
+        taxi.setIdLicense(driver.getIdLicense());
+        
         return taxi;
     }
 }

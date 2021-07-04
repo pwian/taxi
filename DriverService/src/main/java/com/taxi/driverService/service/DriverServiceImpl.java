@@ -27,13 +27,11 @@ public class DriverServiceImpl implements DriverService {
     }
 
     @Override
-    public void saveChanges(Driver update) {
-        Driver driver = repository.getDriverByIdLicense(update.getIdLicense());
-        Assert.notNull(driver, "Driver not exist with license" + update.getIdLicense());
+    public void saveChanges(String idLicense, Boolean availability) {
+        Driver driver = repository.getDriverByIdLicense(idLicense);
+        Assert.notNull(driver, "Driver not exist with license" + idLicense);
 
-        driver.setIsAvailable(update.getIsAvailable());
-        driver.setName(update.getName());
-        driver.setPricePerKm(update.getPricePerKm());
+        driver.setIsAvailable(availability);
         repository.save(driver);
     }
 }
