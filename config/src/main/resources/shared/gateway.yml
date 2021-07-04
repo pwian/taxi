@@ -1,0 +1,19 @@
+zuul:
+  routes:
+    driverService:
+      path: /driverService/**
+      serviceId: driverService
+      stripPrefix: false
+
+    orderService:
+      path: /orderService/**
+      serviceId: orderService
+      stripPrefix: false
+
+    taxiService:
+      path: /taxiService/**
+      serviceId: taxiService
+      stripPrefix: false
+
+server:
+  port: 8081
