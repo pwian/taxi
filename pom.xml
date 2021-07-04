@@ -12,6 +12,7 @@
         <module>taxiService</module>
         <module>DriverService</module>
         <module>OrderService</module>
+        <module>config</module>
     </modules>
 
     <properties>

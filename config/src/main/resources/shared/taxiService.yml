@@ -1,0 +1,4 @@
+server:
+  servlet:
+    context-path: /taxiService
+  port: 6000

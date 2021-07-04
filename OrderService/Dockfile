@@ -1,0 +1,5 @@
+FROM java:8-jre
+
+ADD ./target/taxiService.jar /app/
+CMD ["java", "-Xmx200m", "-jar", "/app/orderService.jar"]
+EXPOSE 8000
