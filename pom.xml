@@ -13,6 +13,7 @@
         <module>DriverService</module>
         <module>OrderService</module>
         <module>config</module>
+        <module>gateway</module>
     </modules>
 
     <properties>

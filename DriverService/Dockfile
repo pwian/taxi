@@ -1,5 +1,5 @@
 FROM java:8-jre
 
-ADD ./target/taxiService.jar /app/
+ADD ./target/driverService.jar /app/
 CMD ["java", "-Xmx200m", "-jar", "/app/driverService.jar"]
 EXPOSE 8080
