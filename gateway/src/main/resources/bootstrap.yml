@@ -1,6 +1,6 @@
 spring:
   application:
-    name: taxiService
+    name: gateway
   cloud:
     uri: http://config:8888
     fail-fast: true

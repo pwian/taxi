@@ -24,7 +24,7 @@ public class TaxiServiceImpl implements TaxiService{
 
     @Override
     public Taxi getBestTaxi(){
-        List<Driver> drivers = template.getForObject("http://driverService/availableDrivers", (Class<List<Driver>>) new ArrayList<Driver>().getClass());
+        List<Driver> drivers = template.getForObject("http://driverService/availableDrivers", new ArrayList<Driver>().getClass());
         Assert.notEmpty(drivers, "Drivers is empty");
 
         Driver driver = drivers.stream().min(Comparator.comparing(Driver::getPricePerKm)).get();
