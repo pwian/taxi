@@ -1,6 +1,6 @@
-package orderService.repository;
+package com.taxi.orderService.repository;
 
-import orderService.domain.Order;
+import com.taxi.orderService.domain.Order;
 import org.springframework.data.repository.CrudRepository;
 
 /**

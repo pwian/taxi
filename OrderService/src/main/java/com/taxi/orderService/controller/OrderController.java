@@ -1,6 +1,6 @@
-package orderService.controller;
+package com.taxi.orderService.controller;
 
-import orderService.service.OrderService;
+import com.taxi.orderService.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

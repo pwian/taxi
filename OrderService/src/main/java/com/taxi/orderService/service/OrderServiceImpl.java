@@ -1,14 +1,10 @@
-package orderService.service;
+package com.taxi.orderService.service;
 
-import orderService.domain.Taxi;
-import orderService.repository.OrderRepository;
+import com.taxi.orderService.repository.OrderRepository;
+import com.taxi.orderService.domain.Taxi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
 
 /**
  * @author Aleksandr Ivakin

@@ -1,4 +1,4 @@
-package orderService.domain;
+package com.taxi.orderService.domain;
 
 import org.springframework.data.annotation.Id;
 

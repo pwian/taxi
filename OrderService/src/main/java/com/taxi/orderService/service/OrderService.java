@@ -1,4 +1,4 @@
-package orderService.service;
+package com.taxi.orderService.service;
 
 /**
  * @author Aleksandr Ivakin
