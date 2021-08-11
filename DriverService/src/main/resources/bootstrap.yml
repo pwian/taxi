@@ -3,6 +3,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/driver
     username: sa
     password: sa
+    driverClassName: org.postgresql.Driver
   jpa:
     show-sql: false
   application:
