@@ -1,11 +1,13 @@
 package com.taxi.taxiService.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Transient;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 
 /**
  * @author Aleksandr Ivakin
  **/
+@Entity
 public class Taxi {
 
     @Id

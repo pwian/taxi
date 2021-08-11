@@ -1,10 +1,12 @@
 package com.taxi.driverService.domain;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * @author Aleksandr Ivakin
  **/
+@Entity
 public class Driver {
 
     @Id

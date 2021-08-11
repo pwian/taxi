@@ -1,4 +1,10 @@
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/driver
+    username: sa
+    password: sa
+  jpa:
+    show-sql: false
   application:
     name: driverService
   cloud:

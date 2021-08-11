@@ -1,4 +1,10 @@
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taxi
+    username: sa
+    password: sa
+  jpa:
+    show-sql: false
   application:
     name: taxiService
   cloud:
