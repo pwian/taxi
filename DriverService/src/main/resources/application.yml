@@ -1,11 +1,18 @@
 spring:
   datasource:
-#    url: jdbc:postgresql://localhost:5432/driver
-#    username: sa
-#    password: sa
-#    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/driver
+    username: sa
+    password: sa
+    driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    open-in-view: false
   application:
     name: driverService
 #  cloud:
@@ -14,8 +21,8 @@ spring:
 #    password: ${CONFIG_SERVICE_PASSWORD}
 #    username: user
 
-server:
-  port: ${PORT:8761}
+#server:
+#  port: ${PORT:8761}
 
 #eureka:
 #  client:

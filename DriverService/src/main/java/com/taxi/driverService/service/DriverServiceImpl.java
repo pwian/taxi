@@ -20,7 +20,7 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     public List<Driver> getAvailableDrivers() {
-        return repository.getDrivers()
+        return repository.findAll()
                 .stream()
                 .filter(driver -> driver.getIsAvailable())
                 .collect(Collectors.toList());

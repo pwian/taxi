@@ -14,5 +14,5 @@ public interface DriverRepository extends CrudRepository<Driver, String> {
 
     Driver getDriverByIdLicense(String idLicense);
 
-    List<Driver> getDrivers();
+    List<Driver> findAll();
 }
