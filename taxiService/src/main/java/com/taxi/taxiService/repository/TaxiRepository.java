@@ -12,5 +12,5 @@ import java.util.List;
 @Repository
 public interface TaxiRepository extends CrudRepository<Taxi, String> {
 
-    List<Taxi> getTaxiByDriverIdLicense(String driverIdLicense);
+    List<Taxi> findByDriverIdLicenseEquals(String driverIdLicense);
 }

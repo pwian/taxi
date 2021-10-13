@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order
+    username: sa
+    password: sa
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    open-in-view: false
+  application:
+    name: taxiService
+#  cloud:
+#    uri: http://config:8888
+#    fail-fast: true
+#    password: ${CONFIG_SERVICE_PASSWORD}
+#    username: user
