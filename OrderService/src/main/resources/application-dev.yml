@@ -15,6 +15,8 @@ spring:
     open-in-view: false
   application:
     name: taxiService
+  liquibase:
+    change-log: classpath:db/changeLogMain.yaml
 #  cloud:
 #    uri: http://config:8888
 #    fail-fast: true

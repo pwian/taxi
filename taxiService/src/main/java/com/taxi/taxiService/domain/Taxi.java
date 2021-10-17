@@ -2,12 +2,14 @@ package com.taxi.taxiService.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.persistence.Transient;
 
 /**
  * @author Aleksandr Ivakin
  **/
 @Entity
+@Table(name = "Taxi")
 public class Taxi {
 
     @Id
