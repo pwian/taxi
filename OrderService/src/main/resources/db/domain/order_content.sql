@@ -1,2 +1,2 @@
-insert into Order(orderId)
+insert into Order(order_id)
 values (1)

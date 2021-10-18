@@ -1,4 +1,4 @@
 create table Driver
 (
-    orderId integer not null primary key
+    order_id integer not null primary key
 );
